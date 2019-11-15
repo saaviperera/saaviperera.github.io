@@ -1,145 +1,1087 @@
----
-title:  "FASS"
-permalink: /fass/
----
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+   <title>Saavi Perera</title>
+   <meta name="description" content="">
+   <meta name="author" content="">
 
+   <!-- Mobile Specific Metas
+   ================================================== -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<style>
+   <!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+   <link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
 
+   <!-- Script
+   ================================================== -->
+   <script src="js/modernizr.js"></script>
 
-figure {
-  width: 30%;
-  text-align: center;
-  font-style: italic;
-  font-size: smaller;
-  text-indent: 0;
-  margin: 0.5em;
-  padding: 0.5em;
-}
+   <!-- Favicons
+   ================================================== -->
+<!--  <link rel="shortcut icon" href="favicon.png" > -->
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-
-article {
-  float: left;
-  padding: 20px;
-  width: 100%;
-  background-color: #f1f1f1;
-
-}
-
-
-
-
-}
-
-.site-main {
-  z-index: 0;
-  width: 100%;
-
-  position: relative;
-  margin-top: 5cm;
-  padding-left: 15%;
-  padding-right: 15%;
-}
-
-
-.site-main-content-wrapper {
-  width: 100%;
-  min-height: 80%;
-
-  padding: 50px;
-  text-align: justify;
-  box-shadow: 0px 0px 8px gray;
-}
-.site-main-content-wrapper h1 {
-  padding-top: 50px;
-  padding-bottom: 25px;
-  text-align: center;
-}
-.site-main-content-wrapper h2 {
-  padding-top: 250px;
-  padding-bottom: 10px;
-}
-.site-main-content-wrapper h3 {
-  padding-top: 10px;
-  padding-bottom: 5px;
-}
-.site-main-content-wrapper h4 {
-  padding-top: 10px;
-  padding-bottom: 5px;
-}
-
-</style>
-
-
-    <main id="content" class="site-main" role="main">
-
-      <div class="site-main-content-wrapper">
+</head>
 
 <body>
 
-  <h1>Full Aperture Seeing Sensor</h1>
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+            <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Research</a></li>
+            <li><a class="smoothscroll" href="#outreach">Outreach</a></li>     
+            <li><a class="smoothscroll" href="#nyria">NYRIA</a></li>
+            <li><a class="smoothscroll" href="#hobbies">Hobbies</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">I'm Saavidra Perera</h1>
+            <h3> I am a postdoctoral researcher working in astronomical instrumentation for
+          ground based visible/infra-red telescopses. Please scroll on down to 
+          learn a little bit more about my work and <a class="smoothscroll" href="#about">about me</a>.</h3>
+            <hr />
+<!--             <ul class="social">
+               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul> -->
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
 
 
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
 
+      <div class="row">
 
-<section>
- 
-  <article>
-The FASS is a novel turbulence profiling technique that exploits a low noise EMCCD to image the full aperture 
-    of the telescope in order to measure the atmospheric turbulence profile. This technique could replace the 
-    current MASS instrument since it is not only easier to implement, but it also aims to produce higher 
-    resolution turbulence profiles. The FASS instrument is a collaborative development between PUC, Chile 
-    and Durham University, UK. The concept and analysis was developed by Andrés Guesalaga at PUC, and the 
-    design, manufacturing and testing was completed at Durham University. 
+         <div class="three columns">
 
+            <img class="profile-pic"  src="images/profile_square.JPG" alt="" />
 
-  <br><br>
-As the altitude of a turbulent layer increases the structure of the scintillation pattern in the pupil 
-    image (<em>flying shadows</em> or <em>speckles</em>) changes i.e. the characteristic size of the 
-    Fresnel zones associated with the layer increase. By extracting the speckle size and intensity 
-    information from 2-D spatial power spectra obtained from the pupil image (Guesalaga+16). 
- 
-   <br><br>   
-By calculating the power spectra of each linear vector, and averaging for a large number of images, 
-    spectra are obtained which are used for the profile estimation. Smaller speckles will populate 
-    higher spatial frequencies whereas large speckles will tend to concentrate energy at low spatial 
-    frequencies. Weighting functions can be calculated assuming Kolmogorov turbulence. These can then
-    be used to estimate the optical turbulence profile via a fit to the measured data. 
-    
-     <br><br>
-    
-The FASS was combined with the <a href="/shimm/">SHIMM</a>, to make the FASS-SHIMM. The FASS when conjugated 
-    to the ground can not detect the ground layer turbulence. Since the SHIMM measures the 
-    total integrated turbulence, the strength of the ground layer can be found by differencing 
-    these measurements from the two instruments. The FASS and SHIMM are an ideal combination since 
-    both instruments require the full unmasked aperture of the telescope. This is in contrast to the 
-    MASS-DIMM, where aperture masks for both instruments are used. 
+         </div>
 
-  <br><br>
-    
-    
-    
-    
-       <figure>     
-    <img src="/images/research/tower.jpg" style="width:150px">
-    <figcaption> This is the old DIMM tower where the FASS-SHIMM was installed at Paranal Observatory.</figcaption>
-    </figure>  
-  
-    </article>
-</section>
-</body>
+         <div class="nine columns main-col">
 
+            <h2>About Me</h2>
 
+            <p>I am a postdoctoral researcher working in astronomical instrumentation at 
+          the Max Planck Institute for Astronomy (MPIA), 
+          Germany. I was born an brought up in North West Greater London, UK, and since then, 
+          due to my work, I had the opportunity to move around and live in different cities and 
+          countries. My research work focuses primarily on characterising limitations of ground 
+          based visbile/infra-red telescopes and finding was to correct for them.  
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact Details</h2>
+                  <p class="address">
+                     <span>Saavidra Perera</span><br>
+                     <span>Max Planck Institute for Astronomy<br>
+                        Konigstuhl 17<br>
+                             D-69117 Heidelberg, Germany
+                     </span><br>
+                     <span>+49 6221 528-121</span><br>
+                     <span>perera @ mpia.de</span>
+                  </p>
+
+               </div>
+
+               <div class="columns download">
+                  <p>
+                     <a href="CVwithpub.pdf" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
 
       </div>
-    </main>
+
+   </section> <!-- About Section End-->
+
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Durham Unviersity</h3>
+                  <p class="info"> Doctor of Philosophy <span>&bull;</span> <em class="date">Oct 2013 - Oct 2017</em></p>
+
+                  <p>
+           <em>PhD Project:</em> "Characterising and Correcting Atmospheric Seeing for Astronomy" - 
+           Successfully designed, developed and deployed the Shack-Hartmann Image Motion Monitor, 
+           a low-cost portable seeing monitor. The work included simulating the instrument and 
+           optical atmospheric propagation, aligning the optics, on-site testing at the La Palma 
+           observatory and comparing results with SCIDAR. This work led to a collaboration with 
+           Andres Guesalaga from Pontifical Catholic University of Chile, for the combined FASS-SHIMM 
+           turbulence profiler instrument. A prototype of the FASS-SHIMM was installed in 2018 at 
+           Paranal (see below).
+             <em>Supervisors: Dr. R. W. Wilson & Prof. R. Myers </em>                   </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Imperial College London</h3>
+                  <p class="info">MSci Physics: Upper Second Class<span>&bull;</span> <em class="date">Oct 2008 - Jul 2012</em></p>
+
+                  <p>
+           <em>MSci. Project:</em> "Characterising the Atomic Fluctuations of Ovens used in 
+           Ion Traps" - Optimising ovens used in the Imperial College Penning trap to produce 
+           calcium ions. Work entailed research into thin film physics, working with rotatory 
+           and ion vacuum pumps and handling liquid nitrogen. 
+            <em>Supervisor: Prof. R. Thompson</em>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+
+      <!-- Work
+      ----------------------------------------------- -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Work</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Max Planck Institute for Astronomy (MPIA)</h3>
+                  <p class="info">Postdoctoral Researcher <span>&bull;</span> <em class="date">July 2018 - Present</em></p>
+
+                  <p>
+                  <ul style="list-style-type:circle;">
+
+    <li> Working on P-REx which reconstructs the piston drift caused 
+       by the atmosphere for interferometric telescopes, such as LBTI and VLTI.</li>
+    <li> Using pseudo open loop CIAO WFS data for P-REx to compare 
+       with GRAVITY's fringe tracking data.</li>
+   <li> Collaborative work with Steward Observatory to analyse archival 
+      fringe tracking and science data from the LBTI nulling mode to 
+      characterise data quality with respect to telescope vibrations.</li>
+   <li>Supported the SOUL AO observations for the LBTI.</li>
+   <li> Collaborative work with Kalyan Radhakrishnan on predictive 
+      wind speed technique for partially illuminated high layer conjugated WFS for LINC NIRVANA.</li>       
+             
+             </ul>                 
+      </p>
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+              <div class="twelve columns">
+
+                  <h3>Durham University</h3>
+                  <p class="info">Postdoctoral Researcher <span>&bull;</span> <em class="date">January - July 2018</em></p>
+
+                  <p>
+
+                  <ul style="list-style-type:circle;">
+      <li> Based in Chile at PUC for six months commissioning the FASS-SHIMM instrument </li>
+      <li> Collaborative work between ESO, PUC and Durham University </li> 
+      <li> Polar alignment, sky model, autoguiding, data acquisition, installation of the instrument, on-sky testing. </li> 
+      <li> Analysis of SHIMM data.</li> 
+      <li> Produced technical documentation, user manual and installation of the instrument and the software.</li>          
+           
+                  </ul>      
+           
+                  </p>
+
+            </div>
+
+          </div> <!-- item end -->
+
+
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Oxford University</h3>
+                  <p class="info">Intern <span>&bull;</span> <em class="date">October 2012 - April 2013</em></p>
+
+                  <p>
+
+                  <ul style="list-style-type:circle;">
+       <li> Six month work placement in the Astrophysics Instrumentation Group at Oxford University. </li>
+       <li> Worked with Ansoft’s HFSS to design and simulate a dual polarisation feed, comprised of a horn and OMT, as part of collaboration with M-Microwave. </li> 
+
+
+                  </ul>      
+           
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+      <!-- Skills
+      ----------------------------------------------- -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Technical Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <p>
+            <ul>
+          <li> <b>Programming Languages:</b> Proficient in Python, basic programming in C++ and experience in IDL, MATLab and html.</li>
+
+          <li> <b>Operating Systems:</b> Proficient used of Linux, OSX and Windows.</li> 
+  
+          <li> <b>Software Development:</b> Built software to interface with CCD and EMCCD detectors based on SDK of the providers. Co-developed the autoguiding software for a telescope (VX) Mount. Developed data acquisition and real-time data analysis of the SHIMM.</li> 
+ 
+          <li> <b>Lab Work:</b> Experience in optical alignment. Worked with NTM and VX mounts, (EM)CCDs, liquid nitrogen and different vacuum pumps.</li>
+
+          
+          <li> <b>Observations:</b> Observed with SOUL AO system for the LBTI on the LBT. Made observations with the SHIMM five times and FASS-SHIMM five times.</li>
+
+            </ul>
+            </p>
+
+<!-- 				<div class="bars">
+
+				   <ul class="skills">
+					   <li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
+                  <li><span class="bar-expand illustrator"></span><em>Illustrator</em></li>
+						<li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
+						<li><span class="bar-expand css"></span><em>CSS</em></li>
+						<li><span class="bar-expand html5"></span><em>HTML5</em></li>
+                  <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
+					</ul>
+
+				</div> --><!-- end skill-bars -->
+
+			</div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Other Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <p>
+            <ul>
+
+          
+          <li> <b>Communication:</b> Coordinating with different staff members at Paranal during the commissioning of the FASS-SHIMM, especially important since I worked solo at night on the tower.</li>
+       
+          <li> <b>Teaching and Supervising:</b> Supervised PhD student for 4 weeks and demonstrated in undergraduate Python computing labs.</li>
+
+          <li> <b>Committees:</b> At Durham University served as a post-graduate representative for three years, on the Diversity and Equality Committee for two years and basketball team social secretary for two years.</li>
+          
+          <li> <b>Languages:</b> Native English speaker and basic Spanish.</li>
+        
+          <li> <b>Sport:</b> Three years basketball for Ustinov Women's Basketball Team at Durham University and avid gym-goer. </li>  
 
 
 
 
+            </ul>
+            </p>
+
+<!--        <div class="bars">
+
+           <ul class="skills">
+             <li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
+                  <li><span class="bar-expand illustrator"></span><em>Illustrator</em></li>
+            <li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
+            <li><span class="bar-expand css"></span><em>CSS</em></li>
+            <li><span class="bar-expand html5"></span><em>HTML5</em></li>
+                  <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
+          </ul>
+
+        </div> --><!-- end skill-bars -->
+
+      </div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+
+   </section> <!-- Resume Section End-->
+
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Some Of My Research</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="images/research/VLT_square.JPG">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>P-REx</h5>
+                              <p>LBTI/VLTI</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="images/research/LBTwhole_square.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>HOSTS</h5>
+                              <p>LBTI</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img alt="" src="images/research/LBT_square.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Wind Vectors</h5>
+                              <p>LINC-NIRVANA/LBT</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-04" title="">
+                        <img alt="" src="images/research/SHIMM_square.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>SHIMM</h5>
+                              <p>Observing Sites</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-05" title="">
+                        <img alt="" src="images/research/tower_square.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>FASS-SHIMM</h5>
+                              <p>Paranal Observatory</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+<!--                <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-06" title="">
+                        <img alt="" src="images/portfolio/girl.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Girl</h5>
+                              <p>Photography</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> --> <!-- item end -->
+
+<!--                <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-07" title="">
+                        <img alt="" src="images/portfolio/origami.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Origami</h5>
+                              <p>Illustrration</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div>  --><!-- item end -->
+
+<!--                <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-08" title="">
+                        <img alt="" src="images/portfolio/retrocam.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Retrocam</h5>
+                              <p>Web Development</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div>  --> <!-- item end -->
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+	      --------------------------------------------------------------- -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/research/VLT_square.JPG" alt="" />
+
+		      <div class="description-box">
+			      <h4>P-REx</h4>
+			      <p>P-REx is a method for predicting the piston drift over individual telescopes for the purpose of interferometry </p>
+               <!-- <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span> -->
+		      </div>
+
+            <div class="link-box">
+               <a href="/prex/" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/research/LBTwhole_square.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>HOSTS</h4>
+            <p>Coming Soon...</p>
+               <!-- <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span> -->
+		      </div>
+
+            <div class="link-box">
+               <!-- <a href="/hosts/" target="_blank">Details</a> -->
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/research/LBT_square.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Wind Vectors</h4>
+			      <p>Coming Soon...</p>
+               <!-- <span class="categories"><i class="fa fa-tag"></i>Branding</span> -->
+		      </div>
+
+            <div class="link-box">
+               <!-- <a href="/windvectors/" target="_blank">Details</a> -->
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-03 End -->
+
+         <div id="modal-04" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/research/SHIMM_square.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>SHIMM</h4>
+			      <p>The SHIMM is a low-cost portable seeing monitor that I developed during my postgraduate studies.  </p>
+               <!-- <span class="categories"><i class="fa fa-tag"></i>Photography</span> -->
+		      </div>
+
+            <div class="link-box">
+               <a href="/shimm/" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-04 End -->
+
+         <div id="modal-05" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/research/tower_square.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>FASS</h4>
+			      <p>The FASS is a novel turbulence profiling technique developed by Andres Guesalaga. For my short postdoc after my PhD I commissioned
+            the FASS-SHIMM at Paranal Observatory.</p>
+               <!-- <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span> -->
+		      </div>
+
+            <div class="link-box">
+               <a href="/fass/" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-05 End -->
+
+<!--          <div id="modal-06" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-girl.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Girl</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div> --><!-- modal-06 End -->
+
+ <!--         <div id="modal-07" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-origami.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Origami</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div> --><!-- modal-07 End -->
+
+<!--          <div id="modal-08" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Retrocam</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div> --><!-- modal-01 End -->
+
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+
+   <!-- Call-To-Action Section
+   ================================================== -->
+   <section id="outreach">
+
+      <div class="row">
+
+         <div class="two columns header-col">
+
+            <h1><span>Outreach</span></h1>
+
+         </div>
+
+         <div class="seven columns">
+
+            <h2><span class="lead">Outreach</span></h2>
+<!--             <p><span class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae. </span></p> -->
+
+        <p><span class="lead">I believe that outreach is important not only to communicate what we as researchers do (and the importance of it) 
+        but more cruically i provides and opportunity to inspire the public about science. 
+
+        <br><br>
+        In the UK I was a <a href="https://www.stem.org.uk/stem-ambassadors">STEM ambassador</a> and throughout my postgraduate studies I have delivered many planetarium shows and lab tours, studies at <a href="https://www.dur.ac.uk/science.outreach/">Durham University</a>, I took part in number of science festivals, visited secondary schools, organised lab tours and gave planetarium shows. In addition, during my undergraduate degree I volunteered at the 
+        <a href="https://www.sciencemuseum.org.uk">Science Museum</a>in London as an archival curator. 
+        
+        <br><br>
+        The <a href="https://www.haus-der-astronomie.de/en">Haus der Astronomie</a> (HdA) at MPIA offers a plethora of outreach
+        events. In house they have a planetrium where they showcase their work. As part of a competition I was asked to do the 
+        the voice over of the "Checking Up in Einstein" show. </span></p>
+
+        <br><br>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OxSEbM56E2U" frameborder="0" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="center"></iframe>
+
+
+            
+         </div>
+
+         <div class="three columns action">
+
+
+
+         </div>
+
+      </div>
+
+   </section> <!-- Call-To-Action Section End-->
+
+
+  <!-- NYRIA Section
+   ================================================== -->
+   <section id="nyria">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="images/NYRIA_Logo.png" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>NYRIA</h2>
+
+            <p>The Network for Young Researchers in Instrumentation for Astronomy (NYRIA) is a network that I and seven others, co-founded NYRIA off the back of a summer school named <em>"Reaching the limits of the sky, astronomical instrumentation in the 21st Century"</em>, in 2014. The summer school was an incredible experience and for the most of us it was the first time to Chile and Paranal Observatory, and we all got on like a house on fire and at the end of the two weeks it was sad to say our goodbyes. Most of us stayed in contact via WhatsApp and the ones that were based in Europe decided to get together in Heidelberg (where most were situated). The MPIA guys that were there organized a tour and we gave talks to update each other. At the end we realized that this was really quite special and rare, from then on we decided to meet annually in different institutes bringing new people from wherever we were. The following year we met in Durham and realized we needed to actively be more inclusive, advertising that we were meeting and inviting others. So in 2017 we have our first official workshop at…. in France. In 2018 we met in Leiden University, Netherlands and 2019 we met at the University of Lisbon, Portugal. Each year we extended our reach across the globe, growing in new numbers. <br><br>
+
+            Please visit the <a href="https://nyriastronomy.github.io">NYRIA website</a> to get more information on what we do and what we have done. The website was developed and has been maintained by Felix Bosco and myself. 
+
+            </p>
+
+<!--             <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact Details</h2>
+                  <p class="address">
+                     <span>Saavidra Perera</span><br>
+                     <span>Max Planck Institute for Astronomy<br>
+                        Konigstuhl 17<br>
+                             D-69117 Heidelberg, Germany
+                     </span><br>
+                     <span>+49 6221 528-121</span><br>
+                     <span>perera @ mpia.de</span>
+                  </p>
+
+               </div> -->
+
+<!--                <div class="columns download">
+                  <p>
+                     <a href="CVwithpub.pdf" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+               </div> -->
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+
+
+
+
+
+
+   <!-- hobbies Section
+   ================================================== -->
+   <section id="hobbies">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Some Of My Hobbies</h1>
+
+            <!-- hobbies-wrapper -->
+            <div id="hobbies-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+               <div class="columns hobbies-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-H01" title="">
+                        <img alt="" src="images/hobbies/cakes_square.jpg">
+                        <div class="overlay">
+                           <div class="hobbies-item-meta">
+                              <h5>Cake Decorating</h5>
+                              <!-- <p>LBTI/VLTI</p> -->
+                           </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns hobbies-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-H02" title="">
+                        <img alt="" src="images/hobbies/diving.jpg">
+                        <div class="overlay">
+                           <div class="hobbies-item-meta">
+                              <h5>Diving</h5>
+                              <!-- <p>LBTI</p> -->
+                           </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns hobbies-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-H03" title="">
+                        <img alt="" src="images/hobbies/basketball.jpg">
+                        <div class="overlay">
+                           <div class="hobbies-item-meta">
+                              <h5>Basketball</h5>
+                              <!-- <p>LINC-NIRVANA/LBT</p> -->
+                           </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns hobbies-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-H04" title="">
+                        <img alt="" src="images/hobbies/gym.JPG">
+                        <div class="overlay">
+                           <div class="hobbies-item-meta">
+                              <h5>Gym</h5>
+                              <!-- <p>Observing Sites</p> -->
+                           </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+               </div> <!-- item end -->
+
+
+            </div> <!-- hobbies-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+         --------------------------------------------------------------- -->
+
+         <div id="modal-H01" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/hobbies/cakes_square.jpg" alt="" />
+
+            <div class="description-box">
+               <h4>Cake Decorating</h4>
+               <p>One of my favourite hobbies is decorating cakes.</p>
+               <!-- <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span> -->
+            </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net" target="_blank">Details</a>
+               <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+         </div><!-- modal-01 End -->
+
+         <div id="modal-H02" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/hobbies/diving.jpg" alt="" />
+
+            <div class="description-box">
+               <h4>Diving</h4>
+               <p>I got my PADI in Koh Tao, Thailand with <a href="https://davyjoneslocker.asia" target="_blank"> Davy Jones’ Locker</a>. It was one of the most amazing feelings having an insight to a world that I had only had through David Attenbourgh documentaries. It is a feeling I have been chasing ever since. Since I am not a fan of cold water I try and take one diving holiday a year, making to Thailand, La Palma, Sri Lanka, Oman and France.</p>
+               <!-- <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span> -->
+            </div>
+
+            <div class="link-box">
+               <!-- <a href="http://www.behance.net" target="_blank">Details</a> -->
+               <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+         </div><!-- modal-02 End -->
+
+         <div id="modal-H03" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/hobbies/basketball.jpg" alt="" />
+
+            <div class="description-box">
+               <h4>Basketball</h4>
+               <p>Whilst at Durham University, I played for three years Ustinov Women’s Basketball Team. In that time my position changed a lot.</p>
+               <!-- <span class="categories"><i class="fa fa-tag"></i>Branding</span> -->
+            </div>
+
+            <div class="link-box">
+               <!-- <a href="http://www.behance.net" target="_blank">Details</a> -->
+               <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+         </div><!-- modal-03 End -->
+
+         <div id="modal-H04" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/hobbies/gym.JPG" alt="" />
+
+            <div class="description-box">
+               <h4>Gym</h4>
+               <p>I am a big fan of weight training. Check out <a href="https://www.youtube.com/user/JDCav24" target="_blank"> Athlean-X</a></p>
+               <!-- <span class="categories"><i class="fa fa-tag"></i>Photography</span> -->
+            </div>
+
+            <div class="link-box">
+               <!-- <a href="http://www.behance.net" target="_blank">Details</a> -->
+               <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+         </div><!-- modal-04 End -->
+
+<!--          <div id="modal-05" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/hobbies/modals/m-farmerboy.jpg" alt="" />
+
+            <div class="description-box">
+               <h4>Farmer Boy</h4>
+               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
+            </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net" target="_blank">Details</a>
+               <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+         </div> --><!-- modal-05 End -->
+
+<!--          <div id="modal-06" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/hobbies/modals/m-girl.jpg" alt="" />
+
+            <div class="description-box">
+               <h4>Girl</h4>
+               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+            </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net" target="_blank">Details</a>
+               <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+         </div> --><!-- modal-06 End -->
+
+ <!--         <div id="modal-07" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/hobbies/modals/m-origami.jpg" alt="" />
+
+            <div class="description-box">
+               <h4>Origami</h4>
+               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>
+            </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net" target="_blank">Details</a>
+               <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+         </div> --><!-- modal-07 End -->
+
+<!--          <div id="modal-08" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/hobbies/modals/m-retrocam.jpg" alt="" />
+
+            <div class="description-box">
+               <h4>Retrocam</h4>
+               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
+            </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net" target="_blank">Details</a>
+               <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+         </div> --><!-- modal-01 End -->
+
+
+      </div> <!-- row End -->
+
+   </section> <!-- hobbies Section End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+<!--             <ul class="social-links">
+               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul> -->
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2019 Saavidra Perera</li>
+               <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>   
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>
