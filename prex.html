@@ -2,16 +2,205 @@
 title:  "P-REx"
 permalink: /prex/
 ---
+
+
+
 <style>
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+* {
+  box-sizing: border-box;
 }
+
+figure {
+  float: right;
+  width: 20%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: black;
+  height: 200px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+}
+
+.site-main {
+  z-index: 0;
+  width: 100%;
+
+  position: relative;
+  margin-top: 5cm;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+/*
+.site-main {
+  z-index: -2;
+  min-height: 100%;
+  margin-top: 5cm;
+  margin-bottom: -60px;
+  position: relative;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: justify;
+}
+.site-main::after {
+  content: "";
+  display: block;
+  height: 60px;
+}
+*/
+
+.site-main-content-wrapper {
+  width: 100%;
+  min-height: 80%;
+
+  padding: 50px;
+  text-align: justify;
+  box-shadow: 0px 0px 8px gray;
+}
+.site-main-content-wrapper h1 {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.site-main-content-wrapper h2 {
+  padding-top: 250px;
+  padding-bottom: 10px;
+}
+.site-main-content-wrapper h3 {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.site-main-content-wrapper h4 {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
 </style>
 
 
-<h1> P-REx </h1>
+    <main id="content" class="site-main" role="main">
 
-testing
+      <div class="site-main-content-wrapper">
+
+
+
+  <h1>Full Aperture Seeing Sensor</h1>
+
+
+
+
+<section>
+ 
+  <article>
+For sensitive infrared interferometry it is crucial to control the differential piston evolution 
+    between the used telescopes. Whilst this has classically been done with a fringe tracker, 
+    an auxiliary method known as the Piston Reconstruction Experiment (P-REx) has been developed 
+    to further account for the piston drifts induced by the atmosphere over each telescope. The 
+    method has previously been tested extensively in simulation and on off-line data analysis over 
+    a single telescope aperture. It was found that applying the piston reconstruction in a real system 
+    would reduce the piston variation from $\sim$ 10 $\mu$m down to 1 - 2 &mu m  over timescales of up to 
+    two seconds (Felix+18).  
+
+
+  <br><br>
+Temporal and spatial refractive index fluctuations of the atmosphere result in phase delays of different 
+    parts of the wavefront, thereby inducing speckling, movement and intensity fluctuations of an image. 
+    With regards to interferometry, the induced phase delays of different parts of the wavefront results 
+    in unstable observed fringes, randomly moving around the sidereal position. Since interferometry is 
+    reliant on accurately and precisely measuring the optical path difference between each telescope (baseline), 
+    measuring and correcting for these phase delays are critical for the overall performance of the interferometer. 
+ 
+   <br><br>   
+Typically, this has been done by employing AO and fringe trackers. The fundamental need for fringe tracking 
+    limits the sensitivity and sky coverage of direct interferometry in the visible and infrared wavelength 
+    regime. This restriction is due to the short coherence time of the atmosphere. To overcome this problem, 
+    the new algorithm P-REx can extend the integration time over the atmospheric coherence time, thus allowing 
+    observations of fainter targets (Felix+18)}. The method has the advantage that the system can be easily 
+    implemented since all required hardware will already be available at the relevant interferometers. 	
+
+    
+     <br><br>
+    
+The P-REx method has been presented in depth by (Felix+18), but is described here in brief for completeness. 
+    The fundamental idea of P-REx is that by using POL WFS data the piston drift over a single telescope can 
+    simply be calculated by taking the product of the wind velocity and the tip and tilt of the atmosphere:
+    <br>
+<!-- \begin{equation} -->
+    \Delta P = [tip \cdot v_{x} + tilt \cdot v_{y}] \cdot \Delta t \, ,
+<!-- \end{equation} \label{eq:DP} -->
+  <br>
+    where v is the wind speed in the x and y direction, $\Delta t$ is the time over which the piston variation 
+    is measured. The above equation can be used based on the following assumptions: (1) Tip/Tilt are the dominant 
+    optical aberration modes of atmospheric turbulence, (2) The atmospheric turbulence profile is dominated 
+    by a single layer at the ground level, (3) This single layer is driven by wind speed (<em>Taylor`s Frozen Flow</em>) 
+    and (4) No boiling is present. 
+     <br><br>
+By obtaining $\Delta P$ at each individual aperture of an interferometer, the difference in the two piston evolution, 
+    dP, can be determined for each baseline <br>
+<!-- \begin{equation} -->
+    dP(T) = \sum_{t=0}^{T} \Delta P_{1}(t) - \sum_{t=0}^{T} \Delta P_{2}(t)  \, , <br>
+<!-- \end{equation} -->
+ where the subscript 1 and 2 indicates the two telescopes in a single baseline.
+
+  <br><br>
+    
+    
+    
+    
+<!--        <figure>     
+    <img src="/images/research/tower.jpg" width=150px>
+    <figcaption> This is the old DIMM tower where the FASS-SHIMM was installed at Paranal Observatory.
+    </figure>   -->
+  
+    </article>
+</section>
+
+
+
+
+      </div>
+    </main>
+
+
+
