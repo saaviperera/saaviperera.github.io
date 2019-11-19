@@ -166,11 +166,11 @@ The P-REx method has been presented in depth by (Felix+18), but is described her
     The fundamental idea of P-REx is that by using POL WFS data the piston drift over a single telescope can 
     simply be calculated by taking the product of the wind velocity and the tip and tilt of the atmosphere:
     <br>
-<!-- \begin{equation} -->
+
     <center>
     &Delta; P = [tip &#183; v<sub>x</sub> + tilt &#183; v<sub>y</sub>]  &#183; &Delta; t  
     </center>
-<!-- \end{equation} \label{eq:DP} -->
+
   <br>
     where v is the wind speed in the x and y direction, $\Delta t$ is the time over which the piston variation 
     is measured. The above equation can be used based on the following assumptions: (1) Tip/Tilt are the dominant 
@@ -180,9 +180,12 @@ The P-REx method has been presented in depth by (Felix+18), but is described her
      <br><br>
 By obtaining $\Delta P$ at each individual aperture of an interferometer, the difference in the two piston evolution, 
     dP, can be determined for each baseline <br>
+    
     <center>
-    dP(T) = \sum<sub>t=0</sub>^{T} &Delta; P<sub>1</sub>(t) - \sum<sub>t=0</sub>}^{T} &Delta; P<sub>2</sub>(t)  \, , <br>
+    dP(T) = &Sum; <sub>t=0</sub> <sup>{T}</sup> &Delta; P<sub>1</sub>(t) - 
+      &Sum; <sub>t=0</sub><sup>{T}</sup> &Delta; P<sub>2</sub>(t)  , <br>
     </center>
+    
  where the subscript 1 and 2 indicates the two telescopes in a single baseline.
 
   <br><br>
