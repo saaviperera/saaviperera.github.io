@@ -201,7 +201,27 @@ ul#nav li.current a { color: #F06000; }
    color: #A1A1A1;
    margin-bottom: 12px;	
 	
-	
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+img {
+    max-width: 220px;
+    max-height: 150px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}	
 	
 	
 </style>
@@ -283,12 +303,14 @@ The SHIMM  was developed to serve as a low-cost, compact, portable seeing monito
 independent of noise, (2) measure the coherence time (&tau;<sub>0</sub>) and (3) estimate a low-resolution vertical 
     profile of the turbulence.  
  
-  <br><br>
-<figure2 class="center">     
-<img src="/images/research/SHIMM_sky.jpg" width=400px>
-<figcaption> Figure 2: SHIMM on the roof of the INT in La Palma.
- </figcaption>
-</figure2>    
+  <br><br> 
+	
+<figure>
+    <img src="/images/research/SHIMM_sky.jpg" width=400px alt="SHIMM instrument">
+    <figcaption>Figure 2: SHIMM on the roof of the INT in La Palma.</figcaption>
+</figure>	
+	
+	
 	
 </section>	
 </body>
