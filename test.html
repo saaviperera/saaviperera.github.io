@@ -192,101 +192,88 @@ figcaption {
 	
 	
 <section id="info">
-	 <h1>Full Aperture Seeing Sensor <br> (FASS)</h1>
+	   <h1>Piston Reconstruction Experiment <br> (P-REx)</h1>
 
 
-<p align="justify"> The FASS is a novel turbulence profiling technique that exploits a low noise EMCCD to image the full aperture 
-    of the telescope in order to measure the atmospheric turbulence profile. This technique could replace the 
-    current MASS instrument since it is not only easier to implement, but it also aims to produce higher 
-    resolution turbulence profiles. The FASS instrument is a collaborative development between PUC, Chile 
-    and Durham University, UK. The concept and analysis was developed by Andrés Guesalaga at PUC, and the 
-    design, manufacturing and testing was completed at Durham University.  </p>
-	
-	
-<!-- 	
-    <figure2>     
-    <img src="/images/research/telescope.jpg" width=200px>
-    <figcaption> Figure 1: The FASS-SHIMM mounted on an 11" telescope. </figcaption>   
-      </figure2>
-    
-           <figure>     
-    <img src="/images/research/tower.jpg" width=200px>
-           <figcaption> Figure 2: This is the old DIMM tower where the FASS-SHIMM installed at Paranal Observatory.
- </figcaption>
-    </figure> 
- -->
-	
-	
-	
-	
-<div class="row">
-<figure class=center>
+<p align="justify"> For sensitive infrared interferometry it is crucial to control the differential piston evolution 
+    between the used telescopes. Whilst this has classically been done with a fringe tracker, 
+    an auxiliary method known as the Piston Reconstruction Experiment (P-REx) has been developed 
+    to further account for the piston drifts induced by the atmosphere over each telescope. The 
+    method has previously been tested extensively in simulation and on off-line data analysis over 
+    a single telescope aperture. It was found that applying the piston reconstruction in a real system 
+    would reduce the piston variation from ~ 10 &mu;m down to 1 - 2 &mu;m  over timescales of up to 
+    two seconds <a style="text-decoration:none" href ="https://arxiv.org/abs/1712.07716">(Felix+18)</a>.  
 
-  <div class="column">
-    <img src="/images/research/tower.jpg" alt="Forest" style="width:100%">
-    <figcaption> <figp>Figure 2: This is the old DIMM tower where the FASS-SHIMM installed at Paranal Observatory.</figp>
- </figcaption>
-  </div>
-  <div class="column">
-    <img src="/images/research/telescope.jpg" alt="Snow" style="width:100%">
-    <figcaption> <figp>Figure 1: The FASS-SHIMM mounted on an 11" telescope.</figp>
- </figcaption>
-  </div>  
-  </figure>
-</div>	
-	
-	
-	
 
-    <p align="justify">
-As the altitude of a turbulent layer increases the structure of the scintillation pattern in the pupil 
-    image (<em>flying shadows</em> or <em>speckles</em>) changes i.e. the characteristic size of the 
-    Fresnel zones associated with the layer increase. By extracting the speckle size and intensity 
-    information from 2-D spatial power spectra obtained from the pupil image
-      <a style="text-decoration:none"  href ="http://dx.doi.org/10.1117/12.2232012">(Guesalaga+16)</a>. 
+  <br><br>
+Temporal and spatial refractive index fluctuations of the atmosphere result in phase delays of different 
+    parts of the wavefront, thereby inducing speckling, movement and intensity fluctuations of an image. 
+    With regards to interferometry, the induced phase delays of different parts of the wavefront results 
+    in unstable observed fringes, randomly moving around the sidereal position. Since interferometry is 
+    reliant on accurately and precisely measuring the optical path difference between each telescope (baseline), 
+    measuring and correcting for these phase delays are critical for the overall performance of the interferometer. 
  
    <br><br>   
-By calculating the power spectra of each linear vector, and averaging for a large number of images, 
-    spectra are obtained which are used for the profile estimation. Smaller speckles will populate 
-    higher spatial frequencies whereas large speckles will tend to concentrate energy at low spatial 
-    frequencies. Weighting functions can be calculated assuming Kolmogorov turbulence. These can then
-    be used to estimate the optical turbulence profile via a fit to the measured data. 
+Typically, this has been done by employing AO and fringe trackers. The fundamental need for fringe tracking 
+    limits the sensitivity and sky coverage of direct interferometry in the visible and infrared wavelength 
+    regime. This restriction is due to the short coherence time of the atmosphere. To overcome this problem, 
+    the new algorithm P-REx can extend the integration time over the atmospheric coherence time, thus allowing 
+    observations of fainter targets (Felix+18). The method has the advantage that the system can be easily 
+    implemented since all required hardware will already be available at the relevant interferometers. 	
+
     
      <br><br>
     
+The P-REx method has been presented in depth by <a style="text-decoration:none" 
+   href ="https://arxiv.org/abs/1712.07716">(Felix+18)</a>, but is described here in brief for completeness. 
+    The fundamental idea of P-REx is that by using POL WFS data the piston drift over a single telescope can 
+    simply be calculated by taking the product of the wind velocity and the tip and tilt of the atmosphere:
+    <br><br>
 
-      
+    <center>
+    &Delta;P = [tip &#183; v<sub>x</sub> + tilt &#183; v<sub>y</sub>]  &#183; &Delta;t  
+    </center>
+
+  <br>
+    where v is the wind speed in the x and y direction, &Delta;t is the time over which the piston variation 
+    is measured. The above equation can be used based on the following assumptions: (1) Tip/Tilt are the dominant 
+    optical aberration modes of atmospheric turbulence, (2) The atmospheric turbulence profile is dominated 
+    by a single layer at the ground level, (3) This single layer is driven by wind speed (<em>Taylor`s Frozen Flow</em>) 
+    and (4) No boiling is present. 
+     <br><br>
+By obtaining &Delta;P at each individual aperture of an interferometer, the difference in the two piston evolution, 
+    dP, can be determined for each baseline. 
+    <br><br>
     
-The FASS when conjugated to the ground can not detect the ground layer turbulence. As a result the FASS was combined 
-      with the <a style="text-decoration:none"  href="/shimm/">SHIMM</a>, to make the FASS-SHIMM (figure 1). Since the SHIMM measures the 
-    total integrated turbulence, the strength of the ground layer can be found by differencing 
-    these measurements from the two instruments. The FASS and SHIMM are an ideal combination since 
-    both instruments require the full unmasked aperture of the telescope. This is in contrast to the 
-    MASS-DIMM, where aperture masks for both instruments are used. In 2018 I installed the FASS-SHIMM at Paranal Observatory 
-      on the old DIMM tower (figure 2).
+    <center>
+    dP(T) = &Sum;   &Delta; P<sub>1</sub>(t) - 
+      &Sum;  &Delta; P<sub>2</sub>(t)  , 
+    </center>
+    
+    <br><br>
+ where the subscript 1 and 2 indicates the two telescopes in a single baseline. Figure 1 shows simulated results of the theortical
+    and P-REx estimated dP for two 8 m telescopes, and the residual between them. Since P-REx is a cumalitive method, small errors
+    accumulate causing large residuals after ~5 s.
+    <br><br>
+               <figure class="center">     
+    <img src="/images/research/prex_residual.png" width=300px>
+           <figcaption> Figure 1: Example simulation of the theoretical (blue) 
+             and P-REx estimated dP (green) for a single turbulent layer traversing two 8 m telescopes. 
+             The dashed red line indicates the difference of the them.
+ </figcaption>
+    </figure> 
+    
 
-      
-      
 
-      
-      
-  <br><br>
-Currently, this work is being extended negatively conjugate the FASS such that it is sensitive to the 
-ground layer and therefore will not need a SHIMM branch, this will increase the amount of light given to the FASS.  
-</p>
-<br><br> 
- 
+	<br><br></p>
 
 	
   <h2>References</h2> 
-   <ul>
-     <li> Guesalaga, A., Perera, S., Osborn, J., Sarazin, M., Neichel, B., and Wilson, R. W. 
-       <em>"FASS: The Full Aperture Seeing Sensor"</em>. In Astronomical Telescopes and Instrumentation, 
-       volume 9909 of Proc. SPIE, 2016. doi: 10.1117/12.2232012.  
+  <ul>
+     <li> Widmann F., Pott J.-U., Velasco S., <em>"P-REx: The Piston reconstruction experiment for infrared interferometry"</em>.
+       MNRAS, 475, 1224, 2018. 
       
-      
-      </ul>   
-	
+      </ul>  
 	
 	
 </section>	
