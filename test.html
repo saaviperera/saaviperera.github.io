@@ -174,69 +174,82 @@ figcaption {
 	
 	
 <section id="info">
-	<h1> Shack-Hartmann Image Motion Monitor <br> (SHIMM) </h1>
+	 <h1>Full Aperture Seeing Sensor <br> (FASS)</h1>
 
-	<h2> Optical Turbulence </h2>
-<p align="justify"> Optical turbulence occurs when layers of air of different temperature mix, resulting in the aberration of
-starlight propagating through the atmosphere. The atmospheric turbulence induces speckling and movement 
-of the image, called <em>seeing</em>, as well as intensity fluctuations, called <em>scintillation</em>. 
-    Image quality and signal-to-noise of astronomical images and photometric measurements depends on the prevailing seeing 
-and scintillation conditions during an observation. The long-term statistics of the seeing are critical 
-for the optimal selection of observing sites. It is important to emphasise that the altitude of turbulent 
-layers, as well as their strength, affect observations in different ways. Seeing (i.e. image distortion) 
-results from all turbulent layers in the atmosphere. Scintillation however, predominately results from high 
-altitude turbulence. Therefore, for example, it is possible to have overall bad seeing but low scintillation 
-noise. For this reason, facility turbulence monitors play an important role for astronomical observations, 
-with regards to site characterisation and the optimisation and queue-scheduling of observations. </p>
+
+<p align="justify"> The FASS is a novel turbulence profiling technique that exploits a low noise EMCCD to image the full aperture 
+    of the telescope in order to measure the atmospheric turbulence profile. This technique could replace the 
+    current MASS instrument since it is not only easier to implement, but it also aims to produce higher 
+    resolution turbulence profiles. The FASS instrument is a collaborative development between PUC, Chile 
+    and Durham University, UK. The concept and analysis was developed by Andrés Guesalaga at PUC, and the 
+    design, manufacturing and testing was completed at Durham University.  </p>
 	
 	
 	
-	<h2> SHIMM Instrument </h2>	
+    <figure2>     
+    <img src="/images/research/telescope.jpg" width=200px>
+<!--     <img src="/images/research/telescope.jpg" width=200px>       -->
+    <figcaption> Figure 1: The FASS-SHIMM mounted on an 11" telescope. </figcaption>   
+      
+      </figure2>
+    
+           <figure>     
+    <img src="/images/research/tower.jpg" width=200px>
+           <figcaption> Figure 2: This is the old DIMM tower where the FASS-SHIMM installed at Paranal Observatory.
+ </figcaption>
+    </figure> 
 	
-    <figure class="center"> 
-    <img src="/images/research/SHIMM_sky.jpg" alt="SHIMM instrument" width=380px  >
-    <figcaption>Figure 1: SHIMM on the roof of the INT in La Palma.
-    </figcaption>
-    </figure>			
+	
 
     <p align="justify">
-    One of the most commonly used seeing monitors is the Differential Image Motion Monitor (DIMM) 
-    <a style="text-decoration:none"  href="http://adsabs.harvard.edu/full/1990A%26A...227..294S">(Sarazin+89)</a>. 
-    The DIMM is a compact instrument, utilising a small telescope, which measures the differential motion for images 
-    of the target star produced by two subapertures within the telescope pupil. The SHIMM, imaged in figure 1, is a variation on the DIMM design, 
-    made by employing a Shack-Hartmann Wavefront Sensor (SHWFS) instead of an aperture mask <a style="text-decoration:none" 
-       href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9909/99093J/SHIMM-a-seeing-and-turbulence-monitor-for-astronomy/10.1117/12.2231680.pdf">
-	(Perera+16)</a>. By using a SHWFS more subapertures can be used as shown in figure 2. </p>
-												    
-												    												    
+As the altitude of a turbulent layer increases the structure of the scintillation pattern in the pupil 
+    image (<em>flying shadows</em> or <em>speckles</em>) changes i.e. the characteristic size of the 
+    Fresnel zones associated with the layer increase. By extracting the speckle size and intensity 
+    information from 2-D spatial power spectra obtained from the pupil image
+      <a style="text-decoration:none"  href ="http://dx.doi.org/10.1117/12.2232012">(Guesalaga+16)</a>. 
+ 
+   <br><br>   
+By calculating the power spectra of each linear vector, and averaging for a large number of images, 
+    spectra are obtained which are used for the profile estimation. Smaller speckles will populate 
+    higher spatial frequencies whereas large speckles will tend to concentrate energy at low spatial 
+    frequencies. Weighting functions can be calculated assuming Kolmogorov turbulence. These can then
+    be used to estimate the optical turbulence profile via a fit to the measured data. 
+    
+     <br><br>
+    
 
-<figure class="center"> 
-<img src="/images/research/8aps.png" height=150px>
-<img src="/images/research/ap_spot.png" height=150px>  
-<figcaption> Figure 1: (left) Illustrates the illuminated square subapertures of the WFS mapped onto an 11" telescope aperture. 
-  The outer and inner circle indicates the primary and secondary mirror. (right) Shows the resulting spot pattern formed 
-  on the CCD. A log scale has been used to present the image, in order to highlight the contrast between the 
-  background and the spot pattern.
- </figcaption>
-</figure>
-	
-	
-												 
-    <p align="justify">The SHIMM  was developed to serve as a low-cost, compact, portable seeing monitor, that could be easily and 
-    inexpensively duplicated, making it ideal for comparisons of atmospheric conditions around a large observing site.
-    The key advantages of the SHIMM over the DIMM is that it can (1) measuring the Fried parameter (r<sub>0</sub>) 
-    independent of noise, (2) measure the coherence time (&tau;<sub>0</sub>) and (3) estimate a low-resolution vertical 
-    profile of the turbulence.  </p>
+      
+    
+The FASS when conjugated to the ground can not detect the ground layer turbulence. As a result the FASS was combined 
+      with the <a style="text-decoration:none"  href="/shimm/">SHIMM</a>, to make the FASS-SHIMM (figure 1). Since the SHIMM measures the 
+    total integrated turbulence, the strength of the ground layer can be found by differencing 
+    these measurements from the two instruments. The FASS and SHIMM are an ideal combination since 
+    both instruments require the full unmasked aperture of the telescope. This is in contrast to the 
+    MASS-DIMM, where aperture masks for both instruments are used. In 2018 I installed the FASS-SHIMM at Paranal Observatory 
+      on the old DIMM tower (figure 2).
+  <br><br>
+      
+      
+
+      
+      
+  <br><br>
+Currently, this work is being extended negatively conjugate the FASS such that it is sensitive to the 
+ground layer and therefore will not need a SHIMM branch, this will increase the amount of light given to the FASS.  
+     
+<br><br>
+<br><br> </p>
  
   <br><br> 
 	
   <h2>References</h2> 
    <ul>
-     <li> Sarazin, M. and Roddier, F. 
-       <em>"The ESO Differential Image Motion Monitor"</em>. Astron. & Astrop., 227:294–300, 1989. </li>
-     <li> Perera, S., Wilson, R. W., Osborn, J. & Butterley, T. 
-       <em>"SHIMM: a seeing and turbulence monitor for astronomy"</em>. Proc. SPIE 9909, Adaptive Optics Systems V, 99093J, 2016.</li>
-   </ul>
+     <li> Guesalaga, A., Perera, S., Osborn, J., Sarazin, M., Neichel, B., and Wilson, R. W. 
+       <em>"FASS: The Full Aperture Seeing Sensor"</em>. In Astronomical Telescopes and Instrumentation, 
+       volume 9909 of Proc. SPIE, 2016. doi: 10.1117/12.2232012.  
+      
+      
+      </ul>   
 	
 	
 	
