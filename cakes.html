@@ -3,159 +3,212 @@ title:  "Cakes"
 permalink: /cakes/
 ---
 
-
-
 <style>
+	
+	
+/* primary navigation
+--------------------------------------------------------------------- */
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+	 margin: 0;
+	 padding: 0;
+	 border: none;
+	 outline: none;
+}
 
+/* nav-wrap */
+#nav-wrap {
+   font: 12px 'opensans-bold', sans-serif;
+   width: 100%;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+   margin: 0 auto;
+   z-index: 100;
+   position: fixed;
+   left: 0;
+   top: 0;
+   background-color: #333; 
+}
+/* .opaque { background-color: #333; } */
 
+/* hide toggle button */
+#nav-wrap > a.mobile-btn { display: none; }
 
+ul#nav {
+   min-height: 48px;
+   width: auto;
 
-  
-  * {
+   /* center align the menu */
+   text-align: center;
+}
+ul#nav li {
+   position: relative;
+   list-style: none;
+   height: 48px;
+   display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+
+/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+
+   display: inline-block;
+   padding: 8px 13px;
+   line-height: 32px;
+	text-decoration: none;
+   text-align: left;
+   color: #fff;
+
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+ul#nav li a:active { background-color: transparent !important; }
+ul#nav li.current a { color: #F06000; }
+
+	
+	
+	
+	
+	
+/* info
+--------------------------------------------------------------------- */	
+	
+
+#info {
+   background: #ebeeee;
+   padding-top: 90px;
+   padding-bottom: 60px;
+   padding-left: 40px;
+   padding-right: 40px;
+}
+#info h1 {
+   font: 24px/36px 'opensans-semibold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   text-align: center;
+   margin-bottom: 48px;
+   color: #5A5A5A  ;
+}
+
+#info h2 {
+   font: 20px/20px 'opensans-semibold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   text-align: center;
+   margin-bottom: 48px;
+   color: #95A3A3;
+}	
+	
+#info p {
+   color: #636363;
+    font: 16px/20px 'opensans-semibold', sans-serif;
+font-weight: normal;
+}
+
+#info ul {
+   color: #636363;
+    font: 16px/20px 'opensans-semibold', sans-serif;
+font-weight: normal;
+}
+
+ figp {
+   color: white;
+    font: 10px'opensans-semibold', sans-serif;
+font-weight: normal;
+align: justify;
+}
+
+* {
   box-sizing: border-box;
 }
-body {
-  margin: 0;
-  font-family: Arial;
-}
-.header {
-  text-align: center;
-  padding: 32px;
-}
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-/* Create three equal columns that sits next to each other */
+
+
+
 .column {
-  -ms-flex: 33%; /* IE10 */
-  flex: 33%;
-  max-width: 33%;
-  padding: 0 4px;
+  float: right;
+  width: 33.33%;
+  padding: 5px;
 }
+
 .column img {
-  margin-top: 8px;
+  margin-top: 5px;
   vertical-align: middle;
   width: 100%;
-}
-/* Responsive layout - makes a two column-layout instead of four columns */
-/* @media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-} */
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-/*  @media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }  */
-  
-  
-
-  
-  
-  article {
-  float: left;
-  padding: 20px;
-  width: 100%;
-  background-color: #f1f1f1;
-
-}
-
-
-section:after {
+}	
+	
+/* Clearfix (clear floats) */
+.row::after {
   content: "";
-  display: table;
   clear: both;
-}
-
-
+  display: table;
 
 }
 
-.site-main {
-  z-index: 0;
-  width: 100%;
-
-  position: relative;
-  margin-top: 5cm;
-  padding-left: 15%;
-  padding-right: 15%;
-}
-
-
-.site-main-content-wrapper {
-  width: 100%;
-  min-height: 80%;
-
-  padding: 50px;
-  text-align: justify;
-  box-shadow: 0px 0px 8px gray;
-}
-.site-main-content-wrapper h1 {
-  padding-top: 50px;
-  padding-bottom: 25px;
-  text-align: center;
-}
-.site-main-content-wrapper h2 {
-  padding-top: 250px;
-  padding-bottom: 10px;
-}
-.site-main-content-wrapper h3 {
-  padding-top: 10px;
-  padding-bottom: 5px;
-}
-.site-main-content-wrapper h4 {
-  padding-top: 10px;
-  padding-bottom: 5px; */
-  
-  
-  
-  
-}
-
-  .rotate90 {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-  
-  
-  
+			
+		
 </style>
+<body>
+	
+<nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li><a class="smoothscroll" href="../#home">Home</a></li>
+            <li><a class="smoothscroll" href="../#about">About</a></li>
+            <li><a class="smoothscroll" href="../#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="../#portfolio">Research</a></li>
+            <li><a class="smoothscroll" href="../#outreach">Outreach</a></li>     
+            <li><a class="smoothscroll" href="../#nyria">NYRIA</a></li>
+            <li><a class="smoothscroll" href="../#hobbies">Hobbies</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+	
+	
+<section id="info">
+	 <h1>Cake Decorating</h1>
 
 
- <main id="content" class="site-main" role="main">
 
-      <div class="site-main-content-wrapper">
-        <section>
-      <article>
+	
 
-
-  <h1>Cake Decorating</h1>
+	
+<!-- 	
+<div class="row">
 
 
-<div class="row"> 
   <div class="column">
-    <img src="../images/hobbies/cakes/gatsby.jpg" style="width:100%">
-    <img src="../images/hobbies/cakes/choc_shard.jpg" style="width:100%">
-     <img src="../images/hobbies/cakes/shoes.jpg" style="width:100%">   
-    <img src="../images/hobbies/cakes/basket.jpg" style="width:100%">
-    <img src="../images/hobbies/cakes/joe.JPG" style="width:100%">
-    <img src="../images/hobbies/cakes/box.JPG" style="width:100%">
-    <img src="../images/hobbies/cakes/laura.JPG" style="width:100%">
-    <img src="../images/hobbies/cakes/marisa15.JPG" style="width:100%">
-
+    <img src="/images/research/tower.jpg" alt="Forest" style="width:100%">
   </div>
+  <div class="column">
+    <img src="/images/research/telescope.jpg" alt="Snow" style="width:100%">
+
+  </div>  
+
+</div>	 -->
+	
+	
+<div class="row"> 
+
+
+  <div class="column">
+    <img src="../images/hobbies/cakes/alex_MW.jpg" style="width:100%">      
+    <img src="../images/hobbies/cakes/choc_flowers.jpg" style="width:100%">  
+    <img src="../images/hobbies/cakes/matt.JPG" style="width:100%">
+    <img src="../images/hobbies/cakes/trina.JPG" style="width:100%">
+    <img src="../images/hobbies/cakes/blackforest_shade.jpg" style="width:100%"> 
+    <img src="../images/hobbies/cakes/nemo.jpg" style="width:100%">
+    <img src="../images/hobbies/cakes/marisa15.JPG" style="width:100%"> 
+    <img src="../images/hobbies/cakes/blackforest_drip.jpg" style="width:100%">    
+  </div>
+	
+	
   <div class="column">
     <img src="../images/hobbies/cakes/30.jpg" style="width:100%">
     <img src="../images/hobbies/cakes/animals.jpg" style="width:100%">
@@ -165,23 +218,23 @@ section:after {
     <img src="../images/hobbies/cakes/martin.jpg" style="width:100%">
     <img src="../images/hobbies/cakes/gabi.jpg" style="width:100%">    
   </div> 
+
+	
+
   <div class="column">
-    <img src="../images/hobbies/cakes/alex_MW.jpg" style="width:100%">      
-    <img src="../images/hobbies/cakes/choc_flowers.jpg" style="width:100%">  
-    <img src="../images/hobbies/cakes/matt.JPG" style="width:100%">
-    <img src="../images/hobbies/cakes/trina.JPG" style="width:100%">
-    <img src="../images/hobbies/cakes/blackforest_shade.jpg" style="width:100%"> 
-    <img src="../images/hobbies/cakes/nemo.jpg" style="width:100%">
-    <img src="../images/hobbies/cakes/pumpkin.JPG" style="width:100%">   
-    <img src="../images/hobbies/cakes/blackforest_drip.jpg" style="width:100%">    
-  </div>
-
-</div>
-
-     </article>
-          </section>
-      </div>
-    </main> 
+    <img src="../images/hobbies/cakes/gatsby.jpg" style="width:100%">
+    <img src="../images/hobbies/cakes/choc_shard.jpg" style="width:100%">
+     <img src="../images/hobbies/cakes/shoes.jpg" style="width:100%">   
+    <img src="../images/hobbies/cakes/basket.jpg" style="width:100%">
+    <img src="../images/hobbies/cakes/joe.JPG" style="width:100%">
+    <img src="../images/hobbies/cakes/box.JPG" style="width:100%">
+    <img src="../images/hobbies/cakes/laura.JPG" style="width:100%">
+    <img src="../images/hobbies/cakes/pumpkin.JPG" style="width:100%">  	  
 
 
-
+  </div>	
+</div>	
+	
+</section>
+		
+</body>
