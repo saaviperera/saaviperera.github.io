@@ -128,12 +128,13 @@ ul#nav li.current a { color: #F06000; }
 	
 figure {
   float: center;
-  width: 300px;
+  min-width: 300px;
+  max-width: 300px;  
   text-align: center;
   font-style: italic;
   font-size: smaller;
   text-indent: 0;
-  border: thin silver solid;
+
   margin: 0.5em;
   padding: 0.5em;
 }
@@ -144,8 +145,9 @@ figcaption {
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: center;
-    width: 300px;
-}		
+  min-width: 300px;
+  max-width: 300px; 
+}			
 			
 	
 	
@@ -213,7 +215,7 @@ with regards to site characterisation and the optimisation and queue-scheduling 
 	<h2> SHIMM Instrument </h2>	
 	
     <figure class="center"> 
-    <img src="/images/research/SHIMM_sky.jpg" alt="SHIMM instrument" width=300px align="left">
+    <img src="/images/research/SHIMM_sky.jpg" alt="SHIMM instrument" width=300px >
     <figcaption>Figure 1: SHIMM on the roof of the INT in La Palma.
     </figcaption>
     </figure>			
