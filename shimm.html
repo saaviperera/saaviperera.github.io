@@ -3,135 +3,182 @@ title:  "SHIMM"
 permalink: /shimm/
 ---
 
-
 <style>
-* {
-  box-sizing: border-box;
+	
+	
+/* primary navigation
+--------------------------------------------------------------------- */
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+	 margin: 0;
+	 padding: 0;
+	 border: none;
+	 outline: none;
 }
 
-  .center {
+/* nav-wrap */
+#nav-wrap {
+   font: 12px 'opensans-bold', sans-serif;
+   width: 100%;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+   margin: 0 auto;
+   z-index: 100;
+   position: fixed;
+   left: 0;
+   top: 0;
+   background-color: #333; 
+}
+/* .opaque { background-color: #333; } */
+
+/* hide toggle button */
+#nav-wrap > a.mobile-btn { display: none; }
+
+ul#nav {
+   min-height: 48px;
+   width: auto;
+
+   /* center align the menu */
+   text-align: center;
+}
+ul#nav li {
+   position: relative;
+   list-style: none;
+   height: 48px;
+   display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+
+/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+
+   display: inline-block;
+   padding: 8px 13px;
+   line-height: 32px;
+	text-decoration: none;
+   text-align: left;
+   color: #fff;
+
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+ul#nav li a:active { background-color: transparent !important; }
+ul#nav li.current a { color: #F06000; }
+
+	
+	
+	
+	
+	
+/* info
+--------------------------------------------------------------------- */	
+	
+
+#info {
+   background: #ebeeee;
+   padding-top: 90px;
+   padding-bottom: 60px;
+   padding-left: 40px;
+   padding-right: 40px;
+}
+#info h1 {
+   font: 24px/36px 'opensans-semibold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   text-align: center;
+   margin-bottom: 48px;
+   color: #5A5A5A  ;
+}
+
+#info h2 {
+   font: 20px/20px 'opensans-semibold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   text-align: center;
+   margin-bottom: 48px;
+   color: #95A3A3;
+}	
+	
+#info p {
+   color: #636363;
+    font: 16px/20px 'opensans-semibold', sans-serif;
+font-weight: normal;
+}
+
+#info ul {
+   color: #636363;
+    font: 16px/20px 'opensans-semibold', sans-serif;
+font-weight: normal;
+}
+
+ figp {
+   color: white;
+    font: 10px'opensans-semibold', sans-serif;
+font-weight: normal;
+align: justify;
+}
+.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
+
   
+
+
 figure {
   float: center;
-  width: 480px;
+  min-width: 380px;
+  max-width: 380px;  
   text-align: center;
   font-style: italic;
   font-size: smaller;
   text-indent: 0;
-  border: thin silver solid;
   margin: 0.5em;
   padding: 0.5em;
 }
 
-  
-  figure2 {
-  float: center;
-  width: 320px;
-  text-align: center;
-  font-style: italic;
-  font-size: smaller;
-  text-indent: 0;
-  border: thin silver solid;
-  margin: 0.5em;
-  padding: 0.5em;
-}
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 10px;
+    text-align: justify;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
-header {
-  background-color: black;
-  height: 200px;
-  text-align: center;
-  font-size: 30px;
-  color: white;
-}
-
-
-article {
-  float: left;
-  padding: 20px;
-  width: 100%;
-  background-color: #f1f1f1;
-
-}
-
-/* Clear floats after the columns */
-section:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-  
-.site-main {
-  z-index: -2;
-  min-height: 100%;
-  margin-top: 2cm;
-  margin-bottom: 2cm;
-  position: relative;
-  padding-left: 5%;
-  padding-right: 5%;
-  text-align: justify;
-}
-.site-main::after {
-  content: "";
-  display: block;
-  height: 60px;
-}
-
-.site-main-content-wrapper {
-  width: 100%;
-  min-height: 80%;
-
-  padding: 50px;
-  text-align: justify;
-  box-shadow: 0px 0px 8px gray;
-}
-.site-main-content-wrapper h1 {
-  padding-top: 50px;
-  padding-bottom: 25px;
-  text-align: center;
-}
-.site-main-content-wrapper h2 {
-  padding-top: 250px;
-  padding-bottom: 10px;
-}
-.site-main-content-wrapper h3 {
-  padding-top: 10px;
-  padding-bottom: 5px;
-}
-.site-main-content-wrapper h4 {
-  padding-top: 10px;
-  padding-bottom: 5px;
-}
-
+}		
+			
+		
 </style>
+<body>
+	
+<nav id="nav-wrap">
 
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-    <main id="content" class="site-main" role="main">
+         <ul id="nav" class="nav">
+            <li><a class="smoothscroll" href="../#home">Home</a></li>
+            <li><a class="smoothscroll" href="../#about">About</a></li>
+            <li><a class="smoothscroll" href="../#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="../#portfolio">Research</a></li>
+            <li><a class="smoothscroll" href="../#outreach">Outreach</a></li>     
+            <li><a class="smoothscroll" href="../#nyria">NYRIA</a></li>
+            <li><a class="smoothscroll" href="../#hobbies">Hobbies</a></li>
+         </ul> <!-- end #nav -->
 
-      <div class="site-main-content-wrapper">
+      </nav> <!-- end #nav-wrap -->
+	
+	
+<section id="info">
+	<h1> Shack-Hartmann Image Motion Monitor <br> (SHIMM) </h1>
 
-
-
-  <h1>Shack-Hartmann Motion Monitor <br> (SHIMM)</h1>
-
-
-
-
-<section>
- 
-  <article>
-Optical turbulence occurs when layers of air of different temperature mix, resulting in the aberration of
+	<h2> Optical Turbulence </h2>
+<p align="justify"> Optical turbulence occurs when layers of air of different temperature mix, resulting in the aberration of
 starlight propagating through the atmosphere. The atmospheric turbulence induces speckling and movement 
 of the image, called <em>seeing</em>, as well as intensity fluctuations, called <em>scintillation</em>. 
     Image quality and signal-to-noise of astronomical images and photometric measurements depends on the prevailing seeing 
@@ -141,66 +188,58 @@ layers, as well as their strength, affect observations in different ways. Seeing
 results from all turbulent layers in the atmosphere. Scintillation however, predominately results from high 
 altitude turbulence. Therefore, for example, it is possible to have overall bad seeing but low scintillation 
 noise. For this reason, facility turbulence monitors play an important role for astronomical observations, 
-with regards to site characterisation and the optimisation and queue-scheduling of observations. 
+with regards to site characterisation and the optimisation and queue-scheduling of observations. </p>
+	
+	
+	
+	<h2> SHIMM Instrument </h2>	
+	
+    <figure class="center"> 
+    <img src="/images/research/SHIMM_sky.jpg" alt="SHIMM instrument" width=380px  >
+    <figcaption>Figure 1: SHIMM on the roof of the INT in La Palma.
+    </figcaption>
+    </figure>			
 
+    <p align="justify">
+    One of the most commonly used seeing monitors is the Differential Image Motion Monitor (DIMM) 
+    <a style="text-decoration:none"  href="http://adsabs.harvard.edu/full/1990A%26A...227..294S">(Sarazin+89)</a>. 
+    The DIMM is a compact instrument, utilising a small telescope, which measures the differential motion for images 
+    of the target star produced by two subapertures within the telescope pupil. The SHIMM, imaged in figure 1, is a variation on the DIMM design, 
+    made by employing a Shack-Hartmann Wavefront Sensor (SHWFS) instead of an aperture mask <a style="text-decoration:none" 
+       href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9909/99093J/SHIMM-a-seeing-and-turbulence-monitor-for-astronomy/10.1117/12.2231680.pdf">
+	(Perera+16)</a>. By using a SHWFS more subapertures can be used as shown in figure 2. </p>
+												    
+												    												    
 
-  <br><br>
-
-<figure class="center">     
-<img src="/images/research/8aps.png" height=200px>
-<img src="/images/research/ap_spot.png" height=200px>  
+<figure class="center"> 
+<img src="/images/research/8aps.png" height=150px>
+<img src="/images/research/ap_spot.png" height=150px>  
 <figcaption> Figure 1: (left) Illustrates the illuminated square subapertures of the WFS mapped onto an 11" telescope aperture. 
   The outer and inner circle indicates the primary and secondary mirror. (right) Shows the resulting spot pattern formed 
   on the CCD. A log scale has been used to present the image, in order to highlight the contrast between the 
   background and the spot pattern.
  </figcaption>
-</figure>     
- 
-    
-One of the most commonly used seeing monitors is the Differential Image Motion Monitor (DIMM) 
-    <a style="text-decoration:none"  href="http://adsabs.harvard.edu/full/1990A%26A...227..294S">(Sarazin+89)</a>. 
-    The DIMM is a compact instrument, utilising a small telescope, which measures the differential motion for images 
-    of the target star produced by two subapertures within the telescope pupil. The SHIMM is a variation on the DIMM design, 
-    made by employing a Shack-Hartmann Wavefront Sensor (SHWFS) instead of an aperture mask <a style="text-decoration:none" 
-       href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9909/99093J/SHIMM-a-seeing-and-turbulence-monitor-for-astronomy/10.1117/12.2231680.pdf">
-      (Perera+16)</a>. By using a SHWFS more subapertures can be used as shown in figure 1. 
-    
-    The SHIMM  was developed to serve as a low-cost, compact, portable seeing monitor, that could be easily and 
+</figure>
+	
+	
+												 
+    <p align="justify">The SHIMM  was developed to serve as a low-cost, compact, portable seeing monitor, that could be easily and 
     inexpensively duplicated, making it ideal for comparisons of atmospheric conditions around a large observing site.
     The key advantages of the SHIMM over the DIMM is that it can (1) measuring the Fried parameter (r<sub>0</sub>) 
-independent of noise, (2) measure the coherence time (&tau;<sub>0</sub>) and (3) estimate a low-resolution vertical 
-    profile of the turbulence.  
+    independent of noise, (2) measure the coherence time (&tau;<sub>0</sub>) and (3) estimate a low-resolution vertical 
+    profile of the turbulence.  </p>
  
-  <br><br>
-<figure2 class="center">     
-<img src="/images/research/SHIMM_sky.jpg" width=400px>
-<figcaption> Figure 2: SHIMM on the roof of the INT in La Palma.
- </figcaption>
-</figure2>     
-
-    
-    
-    
-<br><br>
-<br><br>
-
-   
-  <h3>References</h3> 
+  <br><br> 
+	
+  <h2>References</h2> 
    <ul>
      <li> Sarazin, M. and Roddier, F. 
        <em>"The ESO Differential Image Motion Monitor"</em>. Astron. & Astrop., 227:294–300, 1989. </li>
      <li> Perera, S., Wilson, R. W., Osborn, J. & Butterley, T. 
        <em>"SHIMM: a seeing and turbulence monitor for astronomy"</em>. Proc. SPIE 9909, Adaptive Optics Systems V, 99093J, 2016.</li>
    </ul>
-  
-    </article>
-</section>
-
-
-
-
-      </div>
-    </main>
-
-
-
+	
+	
+	
+</section>	
+</body>
