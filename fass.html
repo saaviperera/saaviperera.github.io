@@ -2,141 +2,212 @@
 title:  "FASS"
 permalink: /fass/
 ---
-
-
-
+---
 <style>
+	
+	
+/* primary navigation
+--------------------------------------------------------------------- */
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+	 margin: 0;
+	 padding: 0;
+	 border: none;
+	 outline: none;
+}
+
+/* nav-wrap */
+#nav-wrap {
+   font: 12px 'opensans-bold', sans-serif;
+   width: 100%;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+   margin: 0 auto;
+   z-index: 100;
+   position: fixed;
+   left: 0;
+   top: 0;
+   background-color: #333; 
+}
+/* .opaque { background-color: #333; } */
+
+/* hide toggle button */
+#nav-wrap > a.mobile-btn { display: none; }
+
+ul#nav {
+   min-height: 48px;
+   width: auto;
+
+   /* center align the menu */
+   text-align: center;
+}
+ul#nav li {
+   position: relative;
+   list-style: none;
+   height: 48px;
+   display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+
+/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+
+   display: inline-block;
+   padding: 8px 13px;
+   line-height: 32px;
+	text-decoration: none;
+   text-align: left;
+   color: #fff;
+
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+ul#nav li a:active { background-color: transparent !important; }
+ul#nav li.current a { color: #F06000; }
+
+	
+	
+	
+	
+	
+/* info
+--------------------------------------------------------------------- */	
+	
+
+#info {
+   background: #ebeeee;
+   padding-top: 90px;
+   padding-bottom: 60px;
+   padding-left: 40px;
+   padding-right: 40px;
+}
+#info h1 {
+   font: 24px/36px 'opensans-semibold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   text-align: center;
+   margin-bottom: 48px;
+   color: #5A5A5A  ;
+}
+
+#info h2 {
+   font: 20px/20px 'opensans-semibold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   text-align: center;
+   margin-bottom: 48px;
+   color: #95A3A3;
+}	
+	
+#info p {
+   color: #636363;
+    font: 16px/20px 'opensans-semibold', sans-serif;
+font-weight: normal;
+}
+
+#info ul {
+   color: #636363;
+    font: 16px/20px 'opensans-semibold', sans-serif;
+font-weight: normal;
+}
+
+ figp {
+   color: white;
+    font: 10px'opensans-semibold', sans-serif;
+font-weight: normal;
+align: justify;
+}
+
 * {
   box-sizing: border-box;
 }
 
-figure {
-  float: right;
-  max-width: 220px;
-  text-align: center;
-  font-style: italic;
-  font-size: smaller;
-  text-indent: 0;
-  border: thin silver solid;
-  margin: 0.5em;
-  padding: 0.5em;
-}
 
-
-
-figure2 {
-  float: left;
-  max-width: 220px;
-  text-align: center;
-  font-style: italic;
-  font-size: smaller;
-  text-indent: 0;
-  border: thin silver solid;
-  margin: 0.5em;
-  padding: 0.5em;
-}  
-  
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
-header {
-  background-color: black;
-  height: 200px;
-  text-align: center;
-  font-size: 30px;
-  color: white;
-}
-
-
-article {
-  float: left;
-  padding: 20px;
-  width: 100%;
-  background-color: #f1f1f1;
-
-}
-
-/* Clear floats after the columns */
-section:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-  
-.site-main {
-  z-index: -2;
-  min-height: 100%;
-  margin-top: 2cm;
-  margin-bottom: 2cm;
-  position: relative;
-  padding-left: 5%;
-  padding-right: 5%;
-  text-align: justify;
-}
-.site-main::after {
-  content: "";
+	
+.center {
   display: block;
-  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
-.site-main-content-wrapper {
-  width: 100%;
-  min-height: 80%;
-
-  padding: 50px;
-  text-align: justify;
-  box-shadow: 0px 0px 8px gray;
+.column {
+  float: right;
+  width: 50%;
+  padding: 5px;
 }
-.site-main-content-wrapper h1 {
-  padding-top: 50px;
-  padding-bottom: 25px;
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+figure {
+  float: center;
+  min-width: 380px;
+  max-width: 380px;  
   text-align: center;
-}
-.site-main-content-wrapper h2 {
-  padding-top: 250px;
-  padding-bottom: 10px;
-}
-.site-main-content-wrapper h3 {
-  padding-top: 10px;
-  padding-bottom: 5px;
-}
-.site-main-content-wrapper h4 {
-  padding-top: 10px;
-  padding-bottom: 5px;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  margin: 0.5em;
+  padding: 0.5em;
 }
 
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 10px;
+    text-align: justify;
+
+}
+			
+		
 </style>
+<body>
+	
+<nav id="nav-wrap">
 
-    <main id="content" class="site-main" role="main">
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-      <div class="site-main-content-wrapper">
+         <ul id="nav" class="nav">
+            <li><a class="smoothscroll" href="../#home">Home</a></li>
+            <li><a class="smoothscroll" href="../#about">About</a></li>
+            <li><a class="smoothscroll" href="../#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="../#portfolio">Research</a></li>
+            <li><a class="smoothscroll" href="../#outreach">Outreach</a></li>     
+            <li><a class="smoothscroll" href="../#nyria">NYRIA</a></li>
+            <li><a class="smoothscroll" href="../#hobbies">Hobbies</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+	
+	
+<section id="info">
+	 <h1>Full Aperture Seeing Sensor <br> (FASS)</h1>
 
 
-
-  <h1>Full Aperture Seeing Sensor <br> (FASS)</h1>
-
-
-
-<section>
- 
-  <article>
-The FASS is a novel turbulence profiling technique that exploits a low noise EMCCD to image the full aperture 
+<p align="justify"> The FASS is a novel turbulence profiling technique that exploits a low noise EMCCD to image the full aperture 
     of the telescope in order to measure the atmospheric turbulence profile. This technique could replace the 
     current MASS instrument since it is not only easier to implement, but it also aims to produce higher 
     resolution turbulence profiles. The FASS instrument is a collaborative development between PUC, Chile 
     and Durham University, UK. The concept and analysis was developed by Andrés Guesalaga at PUC, and the 
-    design, manufacturing and testing was completed at Durham University. 
-  <br><br>
+    design, manufacturing and testing was completed at Durham University.  </p>
+	
+	
+<!-- 	
     <figure2>     
     <img src="/images/research/telescope.jpg" width=200px>
-<!--     <img src="/images/research/telescope.jpg" width=200px>       -->
     <figcaption> Figure 1: The FASS-SHIMM mounted on an 11" telescope. </figcaption>   
-      
       </figure2>
     
            <figure>     
@@ -144,7 +215,31 @@ The FASS is a novel turbulence profiling technique that exploits a low noise EMC
            <figcaption> Figure 2: This is the old DIMM tower where the FASS-SHIMM installed at Paranal Observatory.
  </figcaption>
     </figure> 
+ -->
+	
+	
+	
+	
+<div class="row">
+<figure class=center>
 
+  <div class="column">
+    <img src="/images/research/tower.jpg" alt="Forest" style="width:100%">
+    <figcaption> <figp>Figure 2: This is the old DIMM tower where the FASS-SHIMM installed at Paranal Observatory.</figp>
+ </figcaption>
+  </div>
+  <div class="column">
+    <img src="/images/research/telescope.jpg" alt="Snow" style="width:100%">
+    <figcaption> <figp>Figure 1: The FASS-SHIMM mounted on an 11" telescope.</figp>
+ </figcaption>
+  </div>  
+  </figure>
+</div>	
+	
+	
+	
+
+    <p align="justify">
 As the altitude of a turbulent layer increases the structure of the scintillation pattern in the pupil 
     image (<em>flying shadows</em> or <em>speckles</em>) changes i.e. the characteristic size of the 
     Fresnel zones associated with the layer increase. By extracting the speckle size and intensity 
@@ -170,7 +265,7 @@ The FASS when conjugated to the ground can not detect the ground layer turbulenc
     both instruments require the full unmasked aperture of the telescope. This is in contrast to the 
     MASS-DIMM, where aperture masks for both instruments are used. In 2018 I installed the FASS-SHIMM at Paranal Observatory 
       on the old DIMM tower (figure 2).
-  <br><br>
+
       
       
 
@@ -179,13 +274,12 @@ The FASS when conjugated to the ground can not detect the ground layer turbulenc
   <br><br>
 Currently, this work is being extended negatively conjugate the FASS such that it is sensitive to the 
 ground layer and therefore will not need a SHIMM branch, this will increase the amount of light given to the FASS.  
-     
-<br><br>
-<br><br>
-    
-    
-   
-  <h3>References</h3> 
+</p>
+<br><br> 
+ 
+
+	
+  <h2>References</h2> 
    <ul>
      <li> Guesalaga, A., Perera, S., Osborn, J., Sarazin, M., Neichel, B., and Wilson, R. W. 
        <em>"FASS: The Full Aperture Seeing Sensor"</em>. In Astronomical Telescopes and Instrumentation, 
@@ -193,17 +287,8 @@ ground layer and therefore will not need a SHIMM branch, this will increase the 
       
       
       </ul>   
-    
-
-  
-    </article>
-</section>
-
-
-
-
-      </div>
-    </main>
-
-
-
+	
+	
+	
+</section>	
+</body>
