@@ -1166,7 +1166,7 @@ footer .social-links li:first-child { margin-left: 0; }
 
 /* popup modal */
 .popup-modal {
-	max-width: 300px;
+	max-width: 350px;
 	background: #fff;
 	position: relative;
 	margin: 0 auto;
