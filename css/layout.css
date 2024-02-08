@@ -291,10 +291,11 @@ ul#nav li.current a { color: #F06000; }
 #resume .main-col { padding-right: 5%; }
 #resume .download .button {
    margin-top: 6px;
-   background: #444;
+   background: #8c8c8c;
+   color: #fff
 }
 #resume .download .button:hover {
-   background: #8c8c8c;
+   background: #444;
    color: #fff;
 }
 #resume .download .button i {
