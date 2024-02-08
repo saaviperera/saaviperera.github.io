@@ -294,8 +294,8 @@ ul#nav li.current a { color: #F06000; }
    background: #444;
 }
 #resume .download .button:hover {
-   background: #fff;
-   color: #3333cc;
+   background: #8c8c8c;
+   color: #fff;
 }
 #resume .download .button i {
    margin-right: 15px;
